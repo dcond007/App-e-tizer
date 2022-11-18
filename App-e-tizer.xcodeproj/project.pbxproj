@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC867F43D751B11C2739D8B7 /* libPods-App-e-tizer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C0452789136453CD2D8EE7 /* libPods-App-e-tizer.a */; };
 		D891714629204E2400A6CAA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D891714529204E2400A6CAA6 /* AppDelegate.swift */; };
 		D891714829204E2400A6CAA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D891714729204E2400A6CAA6 /* SceneDelegate.swift */; };
 		D891714A29204E2400A6CAA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D891714929204E2400A6CAA6 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6449DE28628FFC19969DAFF4 /* Pods-App-e-tizer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-e-tizer.debug.xcconfig"; path = "Target Support Files/Pods-App-e-tizer/Pods-App-e-tizer.debug.xcconfig"; sourceTree = "<group>"; };
+		65C0452789136453CD2D8EE7 /* libPods-App-e-tizer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-App-e-tizer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D891714229204E2400A6CAA6 /* App-e-tizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App-e-tizer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D891714529204E2400A6CAA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D891714729204E2400A6CAA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		D891714E29204E2500A6CAA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D891715129204E2500A6CAA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D891715329204E2500A6CAA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F757C45016A8C2DA9D1D86B0 /* Pods-App-e-tizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-e-tizer.release.xcconfig"; path = "Target Support Files/Pods-App-e-tizer/Pods-App-e-tizer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC867F43D751B11C2739D8B7 /* libPods-App-e-tizer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30949D5803240B19FE0FB861 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65C0452789136453CD2D8EE7 /* libPods-App-e-tizer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D891713929204E2400A6CAA6 = {
 			isa = PBXGroup;
 			children = (
 				D891714429204E2400A6CAA6 /* App-e-tizer */,
 				D891714329204E2400A6CAA6 /* Products */,
+				E4F1658D412F0461B971D0E3 /* Pods */,
+				30949D5803240B19FE0FB861 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,15 @@
 			path = "App-e-tizer";
 			sourceTree = "<group>";
 		};
+		E4F1658D412F0461B971D0E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6449DE28628FFC19969DAFF4 /* Pods-App-e-tizer.debug.xcconfig */,
+				F757C45016A8C2DA9D1D86B0 /* Pods-App-e-tizer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D891715629204E2500A6CAA6 /* Build configuration list for PBXNativeTarget "App-e-tizer" */;
 			buildPhases = (
+				CFB13EAAED232C1E1CB34FD5 /* [CP] Check Pods Manifest.lock */,
 				D891713E29204E2400A6CAA6 /* Sources */,
 				D891713F29204E2400A6CAA6 /* Frameworks */,
 				D891714029204E2400A6CAA6 /* Resources */,
+				B831FDD4B4A69AB660951D8B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B831FDD4B4A69AB660951D8B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-App-e-tizer/Pods-App-e-tizer-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-App-e-tizer/Pods-App-e-tizer-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-App-e-tizer/Pods-App-e-tizer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFB13EAAED232C1E1CB34FD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-App-e-tizer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D891713E29204E2400A6CAA6 /* Sources */ = {
@@ -282,11 +350,13 @@
 		};
 		D891715729204E2500A6CAA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6449DE28628FFC19969DAFF4 /* Pods-App-e-tizer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "App-e-tizer/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -309,11 +379,13 @@
 		};
 		D891715829204E2500A6CAA6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F757C45016A8C2DA9D1D86B0 /* Pods-App-e-tizer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "App-e-tizer/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
